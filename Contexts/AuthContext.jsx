@@ -12,7 +12,7 @@ const AuthContext = React.createContext({
   userData: {},
 });
 
-const BASE_URL ="https://.xyz/api/auth";
+const BASE_URL ="https://protein-intel.xyz/api/auth";
 
 export const AuthProvider = (props) => {
   const [userData, setUserData] = useState(null);

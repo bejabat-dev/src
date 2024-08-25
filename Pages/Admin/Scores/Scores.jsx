@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const Scores = () => {
-  const baseUrl =
-    (import.meta.env.VITE_API_URL &&
-      `${import.meta.env.VITE_API_URL}/admin/scores`) ||
-    "https://protein-intel.xyz/api/admin/scores";
+  const baseUrl ="https://protein-intel.xyz/api/admin/scores";
 
   const [allScores, setAllScores] = useState([]);
   const [selectedBatch, setSelectedBatch] = useState("");

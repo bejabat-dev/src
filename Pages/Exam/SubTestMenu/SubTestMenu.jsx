@@ -3,10 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const OngoingExam = (props) => {
-  const baseUrl =
-    (import.meta.env.VITE_API_URL &&
-      `${import.meta.env.VITE_API_URL}/test/subtest`) ||
-    "https://protein-intel.xyz/api/test/subtest";
+  const baseUrl ="https://protein-intel.xyz/api/test/subtest";
 
   const navigate = useNavigate();
 

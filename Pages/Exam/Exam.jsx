@@ -9,9 +9,7 @@ import SeeScore from "./SeeScore/SeeScore";
 
 const Exam = () => {
   const authCtx = useContext(AuthContext);
-  const baseUrl =
-    (import.meta.env.VITE_API_URL && `${import.meta.env.VITE_API_URL}/test`) ||
-    "https://protein-intel.xyz/api/test";
+  const baseUrl ="https://protein-intel.xyz/api/test";
 
   const [isLoading, setIsLoading] = useState(true);
   const [isNotStarted, setIsNotStarted] = useState(true);

@@ -18,10 +18,7 @@ const Problems = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [order, setOrder] = useState(false);
 
-  const baseUrl =
-    (import.meta.env.VITE_API_URL &&
-      `${import.meta.env.VITE_API_URL}/admin/problems`) ||
-    "https://protein-intel.xyz/api/admin/problems";
+  const baseUrl ="https://protein-intel.xyz/api/admin/problems";
 
   const fileChangedHandler = (e) => {
     // setSelectedFile(e.target.files[0]);

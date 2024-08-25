@@ -5,9 +5,7 @@ import OverallChart from "./OverallChart/OverallChart";
 import AnimatedNumber from "react-animated-number";
 
 export default function SeeScore() {
-  const baseUrl =
-    (import.meta.env.VITE_API_URL && `${import.meta.env.VITE_API_URL}`) ||
-    "https://protein-intel.xyz/api";
+  const baseUrl ="https://protein-intel.xyz/api";
 
   const [scores, setScores] = useState({});
   const [isLoading, setIsLoading] = useState(true);

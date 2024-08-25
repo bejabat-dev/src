@@ -4,10 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const ResetPassword = () => {
-  const baseUrl =
-    (import.meta.env.VITE_API_URL &&
-      `${import.meta.env.VITE_API_URL}/admin/reset-password`) ||
-      "https://protein-intel.xyz/api/admin/reset-password";
+  const baseUrl ="https://protein-intel.xyz/api/admin/reset-password";
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);

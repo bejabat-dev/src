@@ -12,9 +12,7 @@ const AuthContext = React.createContext({
   userData: {},
 });
 
-const BASE_URL =
-  (import.meta.env.VITE_API_URL && `${import.meta.env.VITE_API_URL}/auth`) ||
-  "https://protein-intel.xyz/api/auth";
+const BASE_URL ="https://.xyz/api/auth";
 
 export const AuthProvider = (props) => {
   const [userData, setUserData] = useState(null);

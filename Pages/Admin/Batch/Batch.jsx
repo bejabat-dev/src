@@ -5,10 +5,7 @@ import axios from "axios";
 import { useEffect } from "react";
 
 const Batch = () => {
-  const baseUrl =
-    (import.meta.env.VITE_API_URL &&
-      `${import.meta.env.VITE_API_URL}/admin/batch`) ||
-    "https://protein-intel.xyz/api/admin/batch";
+  const baseUrl ="https://protein-intel.xyz/api/admin/batch";
 
   const [allBatch, setAllBatch] = useState([]);
   const getAllBatch = async () => {

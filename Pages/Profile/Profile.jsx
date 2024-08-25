@@ -3,9 +3,7 @@ import axios from "axios";
 import styles from "./Profile.module.css";
 
 const Profile = () => {
-  const baseUrl =
-    (import.meta.env.VITE_API_URL && `${import.meta.env.VITE_API_URL}/user`) ||
-    "https://protein-intel.xyz/api/user";
+  const baseUrl ="https://protein-intel.xyz/api/user";
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [kpmName, setKpmName] = useState("Tidak Ada File Terpilih");
